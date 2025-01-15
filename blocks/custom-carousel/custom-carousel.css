@@ -1,0 +1,129 @@
+.custom-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-width:200px;
+}
+
+.custom-carousel {
+  display: flex;
+  flex-direction: column;
+  /* transition: transform 0.5s ease-in-out; */
+  margin-left:15px;
+}
+.cards-container{
+  display: flex;
+}
+
+.cards-container > div{
+  flex: 0 0 auto;
+  width: calc(100% / 2); 
+}
+
+.custom-carousel-wrapper .dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.custom-carousel-wrapper .dots-container button {
+  height:15px;
+  border: none;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 55px 5px;
+  cursor: pointer;
+  font-size:7px;
+}
+
+.custom-carousel-wrapper .dots-container button.active {
+  background: #333;
+}
+
+@media (min-width: 641px) {
+  .cards-container > div {
+    width: calc(100% / 3); 
+  }
+}
+
+@media (min-width: 961px) {
+  .cards-container > div {
+    width: calc(100% / 4); 
+  }
+}
+
+@media (min-width: 1280px) {
+  .cards-container > div{
+    width: calc(100% / 5); 
+  }
+}
+
+
+.custom-carousel ul a{
+  background-color: blue;
+  border-radius: 15px;
+  color:white;
+  margin-left:-15%;
+  padding:3% 15%;
+  margin-right:3%;
+  font-size:15px;
+  align-self: flex-end;
+  
+}
+
+.custom-carousel ul a:hover{
+  background-color: rgb(48, 48, 203);
+  text-decoration: none;
+}
+.custom-carousel ul li img
+{
+   width:25px;
+   height:25px;
+   margin-bottom:-2%;
+   justify-self:end;
+}
+.custom-carousel ul
+{
+  box-sizing: border-box;
+   list-style-type: none;
+   /* margin-top:20px; */
+   display: flex;
+   flex-direction: column;
+   /* height: 30px; */
+   /* justify-content: center; */
+   /* align-items: center; */
+   
+}
+.custom-carousel ul img
+{
+  align-self: flex-end;
+  justify-self:end;
+   /* left:30px; */
+   /* float:right; */
+}
+#top-sellers-{
+  text-align: center;
+  margin:50px;
+  font-size:60px;
+  font-weight:lighter;
+}
+.custom-carousel p{
+   /* overflow: hidden;
+
+  text-overflow: ellipsis; */
+  margin-left:5%;
+  white-space: nowrap;
+  font-size: clamp(12px, 5vw, 14px);
+}
+.custom-carousel p:nth-of-type(1){
+   /* overflow: hidden; */
+  /* text-overflow: ellipsis;  */
+  font-weight:500;
+}
+
+@media (width<=415px) {
+  .custom-carousel p{
+    font-size:10px;
+  }
+
+}
